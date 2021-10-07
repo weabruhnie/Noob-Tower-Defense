@@ -1,74 +1,392 @@
 {
-    "Swordman":{
+    "Gunner":{
+        "isOnMarket":true,
         "Upgrades":[
             {
                 "Cost":0,
                 "Stats":{
-                    "SPD":4.4,
-                    "RNG":6.5,
-                    "ATK":15
+                    "SPD":1.5,
+                    "RNG":7,
+                    "ATK":1
                 }
             },
             {
-                "Cost":200,
+                "Cost":50,
+                "Stats":{
+                    "SPD":1.5,
+                    "RNG":9,
+                    "ATK":1
+                }
+            },
+            {
+                "Cost":100,
+                "Stats":{
+                    "SPD":1.5,
+                    "RNG":12,
+                    "ATK":2
+                },
+                "CamoDetection":true
+            },
+            {
+                "Cost":500,
+                "Stats":{
+                    "SPD":0.75,
+                    "RNG":12,
+                    "ATK":5
+                }
+            },
+            {
+                "Cost":600,
+                "Stats":{
+                    "SPD":0.75,
+                    "RNG":15,
+                    "ATK":7
+                }
+            }
+        ],
+        "Mode":"Semi",
+        "MarketPrice":300,
+        "Description":"Basic ranged single target damage dealer.",
+        "Cost":300,
+        "Type":"Ground"
+    },
+
+    "Soldier":{
+        "isOnMarket":true,
+        "Upgrades":[
+            {
+                "Cost":0,
+                "Stats":{
+                    "RNG":11,
+                    "SPD":1.19999999999999995559107901499,
+                    "BurstRate":0.299999999999999988897769753748,
+                    "BurstAmount":3,
+                    "ATK":1
+                }
+            },
+            {
+                "Cost":250,
+                "Stats":{
+                    "RNG":13,
+                    "SPD":1.19999999999999995559107901499,
+                    "BurstRate":0.299999999999999988897769753748,
+                    "BurstAmount":3,
+                    "ATK":1
+                }
+            },
+            {
+                "Cost":500,
+                "Stats":{
+                    "RNG":16,
+                    "SPD":1.10000000000000008881784197001,
+                    "BurstRate":0.299999999999999988897769753748,
+                    "BurstAmount":3,
+                    "ATK":1
+                },
+                "CamoDetection":true
+            },
+            {
+                "Cost":1250,
+                "Stats":{
+                    "RNG":18,
+                    "SPD":0.849999999999999977795539507497,
+                    "BurstRate":0.200000000000000011102230246252,
+                    "BurstAmount":4,
+                    "ATK":2
+                }
+            },
+            {
+                "Cost":2500,
+                "Stats":{
+                    "RNG":22,
+                    "SPD":0.849999999999999977795539507497,
+                    "BurstRate":0.149999999999999994448884876874,
+                    "BurstAmount":5,
+                    "ATK":4
+                }
+            }
+        ],
+        "Mode":"Burst",
+        "MarketPrice":500,
+        "Description":"Burst-type ranged damage dealer.",
+        "Cost":450,
+        "Type":"Ground"
+    },
+
+    "Swordman":{
+        "isOnMarket":true,
+        "Upgrades":[
+            {
+                "Cost":0,
                 "Stats":{
                     "SPD":4,
-                    "RNG":7.5,
-                    "ATK":20
+                    "RNG":6.5,
+                    "ATK":4
+                }
+            },
+            {
+                "Cost":250,
+                "Stats":{
+                    "SPD":3.75,
+                    "RNG":6.5,
+                    "ATK":6
                 }
             },
             {
                 "Cost":500,
                 "Stats":{
                     "SPD":3.5,
-                    "RNG":9.5,
-                    "ATK":35
+                    "RNG":7.20000000000000017763568394003,
+                    "ATK":10
                 }
             },
             {
                 "Cost":1000,
                 "Stats":{
                     "SPD":3,
-                    "RNG":12,
-                    "ATK":70
+                    "RNG":8,
+                    "ATK":16
                 }
             }
         ],
-        "MarketPrice":200,
-        "Description":"Basic damage dealer capable of AOE and Bleed",
-        "Cost":300,
+        "Mode":"Semi",
+        "MarketPrice":500,
+        "Description":"Basic damage dealer capable of AOE and Bleed.",
+        "Cost":400,
         "Type":"Ground"
     },
-    "Noob":{
+
+    "Farm":{
+        "isOnMarket":true,
+        "PlaceLimit":8,
+        "Mode":"Farm",
+        "MarketPrice":1250,
+        "Description":"Make money!",
+        "Cost":250,
+        "Type":"Ground",
         "Upgrades":[
             {
                 "Cost":0,
                 "Stats":{
-                    "SPD":2.2,
-                    "RNG":6,
+                    "SPD":0,
+                    "RNG":7,
+                    "ATK":75
+                }
+            },
+
+            {
+                "Cost":200,
+                "Stats":{
+                    "SPD":0,
+                    "RNG":7,
+                    "ATK":150
+                }
+            },
+
+            {
+                "Cost":500,
+                "Stats":{
+                    "SPD":0,
+                    "RNG":7,
+                    "ATK":250
+                }
+            },
+
+            {
+                "Cost":1000,
+                "Stats":{
+                    "SPD":0,
+                    "RNG":7,
+                    "ATK":500
+                }
+            },
+
+            {
+                "Cost":2500,
+                "Stats":{
+                    "SPD":0,
+                    "RNG":7,
+                    "ATK":1000
+                }
+            }
+        ]
+    },
+
+    "Snoobper":{
+        "isOnMarket":true,
+        "PlaceLimit":10,
+        "Mode":"Semi",
+        "MarketPrice":750,
+        "Description":"Specialized long ranged damage dealer. Every upgrade further increases its range and offensive abilities.",
+        "Cost":400,
+        "Type":"Air",
+        "Upgrades":[
+            {
+                "Cost":0,
+                "Stats":{
+                    "SPD":6,
+                    "RNG":25,
+                    "ATK":10
+                }
+            },
+            {
+                "Cost":500,
+                "Stats":{
+                    "SPD":5.5,
+                    "RNG":28,
                     "ATK":15
+                },
+                "CamoDetection":true
+            },
+            {
+                "Cost":1050,
+                "Stats":{
+                    "SPD":5,
+                    "RNG":35,
+                    "ATK":20
+                }
+            },
+            {
+                "Cost":1750,
+                "Stats":{
+                    "SPD":4.5,
+                    "RNG":45,
+                    "ATK":30
+                }
+            }
+        ]
+    },
+
+    "Noob":{
+        "isOnMarket":false,
+        "Upgrades":[
+            {
+                "Cost":0,
+                "Stats":{
+                    "SPD":3,
+                    "RNG":5,
+                    "ATK":2
                 }
             },
             {
                 "Cost":100,
                 "Stats":{
-                    "SPD":1.9,
+                    "SPD":3,
                     "RNG":7,
-                    "ATK":25
+                    "ATK":3
                 }
             },
             {
                 "Cost":400,
                 "Stats":{
-                    "SPD":1.4,
-                    "RNG":8.7,
-                    "ATK":40
+                    "SPD":2,
+                    "RNG":9,
+                    "ATK":6
                 }
             }
         ],
+        "Mode":"Semi",
         "MarketPrice":0,
-        "Description":"Basic close range single target damage dealer",
-        "Cost":150,
+        "Description":"Basic close range single target damage dealer.",
+        "Cost":200,
         "Type":"Ground"
+    },
+
+    "Einar":{
+        "isOnMarket":true,
+        "PlaceLimit":8,
+        "Mode":"Semi",
+        "MarketPrice":5000,
+        "Description":"E7-Inspired swordman.",
+        "Cost":1250,
+        "Type":"Ground",
+        "Upgrades":[
+            {
+                "Cost":0,
+                "Stats":{
+                    "SPD":2,
+                    "RNG":6,
+                    "ATK":10
+                }
+            },
+            {
+                "Cost":1250,
+                "Stats":{
+                    "SPD":2,
+                    "RNG":6,
+                    "ATK":20
+                }
+            },
+            {
+                "Cost":2500,
+                "Stats":{
+                    "SPD":2,
+                    "RNG":8,
+                    "ATK":50
+                },
+                "CamoDetection":true
+            },
+            {
+                "Cost":5000,
+                "Stats":{
+                    "SPD":4,
+                    "RNG":14,
+                    "ATK":125
+                }
+            }
+        ]
+    },
+
+    "Heavy Noob":{
+        "isOnMarket":true,
+        "PlaceLimit":10,
+        "Mode":"Semi",
+        "MarketPrice":3500,
+        "Description":"A M60-wielded unit that has an insane fire rate.",
+        "Cost":2000,
+        "Type":"Ground",
+        "Upgrades":[
+            {
+                "Cost":0,
+                "Stats":{
+                    "SPD":0.149999999999999994448884876874,
+                    "RNG":15,
+                    "ATK":1
+                }
+            },
+            {
+                "Cost":600,
+                "Stats":{
+                    "SPD":0.100000000000000005551115123126,
+                    "RNG":17,
+                    "ATK":1
+                }
+            },
+            {
+                "Cost":950,
+                "Stats":{
+                    "SPD":0.100000000000000005551115123126,
+                    "RNG":19,
+                    "ATK":1
+                },
+                "CamoDetection":true
+            },
+            {
+                "Cost":4000,
+                "Stats":{
+                    "SPD":0.0500000000000000027755575615629,
+                    "RNG":19,
+                    "ATK":2
+                }
+            },
+            {
+                "Cost":10000,
+                "Stats":{
+                    "SPD":0.0500000000000000027755575615629,
+                    "RNG":21,
+                    "ATK":4
+                }
+            }
+        ]
     }
 }
